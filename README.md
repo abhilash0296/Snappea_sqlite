@@ -6,7 +6,7 @@
   1. Ruby 2.3
   2. Rails 4.2
 
-1. Extract the project (Snappea.zip) 
+1. Clone the project
 2. Change directory to project directory
 3. run $ Rake db:create
 4. run $ budle install
