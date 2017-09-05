@@ -1,0 +1,1 @@
+rspec spec/requests/api/apirequests_spec.rb
