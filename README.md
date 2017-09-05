@@ -1,6 +1,6 @@
 # Snappea
 
-#Steps to install and run the project
+# Steps to install and run the project
 
 * prerequisite:
   1. Ruby 2.3
@@ -15,13 +15,13 @@
 * Rails server will start successfully.
 
 
-#Rspec Test cases :-
+# Rspec Test cases :-
 
 1. Change directory to project directory
 2. run $ rspec spec/requests/api/apirequests_spec.rb
 
 
-#Rest Api Calls (for localhost) :-
+# Rest Api Calls (for localhost) :-
 
 * If need to test on production, then change host in urls. Try some Curl Calls as follows
 
