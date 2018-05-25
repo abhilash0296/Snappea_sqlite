@@ -12,8 +12,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'responders', '~> 2.0'
 gem 'will_paginate', '~> 3.1.1'
 
-group :production do
-  gem "pg"
+group :production, :test do
+  gem 'pg', '~> 0.20'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
@@ -27,6 +28,3 @@ group :development do
   gem 'sqlite3'
 end
 
-group :test do
-  gem "pg"
-end
