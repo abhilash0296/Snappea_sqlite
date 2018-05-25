@@ -1,16 +1,23 @@
-default: &default
+development:
   adapter: sqlite3
   pool: 5
   timeout: 5000
-
-development:
-  <<: *default
   database: db/snappea_development.sqlite3
 
 test:
-  <<: *default
-  database: db/snappea_test.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  database: d9jlh09tbotvmb
+  username: xbrvjqjgxwjrgy
+  password: 5d55526ba5ca3fcadce5417225def283e6bbc0374cb9859eabeb3bd4c27fd4df
+  host: ec2-54-204-39-46.compute-1.amazonaws.com
+  port: 5432
 
 production:
-  <<: *default
-  database: db/snappea_production.sqlite3
+  adapter: postgresql
+  encoding: utf8
+  database: d7kffvk16k0uct
+  username: wahejpobnqiqgx
+  password: 77e2116e8a28c2250cfa374b3b6732251026dae14b82b5568a7a70229caec064
+  host: ec2-54-227-252-237.compute-1.amazonaws.com
+  port: 5432	
