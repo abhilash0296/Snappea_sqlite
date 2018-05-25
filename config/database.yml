@@ -1,19 +1,16 @@
 default: &default
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password:
-  host: 127.0.0.1
-  port: 3306
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
 
 development:
   <<: *default
-  database: snappea_development
+  database: db/snappea_development.sqlite3
 
 test:
   <<: *default
-  database: snappea_test
+  database: db/snappea_test.sqlite3
 
 production:
   <<: *default
-  database: snappea_production
+  database: db/snappea_production.sqlite3
